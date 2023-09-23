@@ -171,8 +171,6 @@ if __name__ == '__main__':
         print('The length of w is ', len(w_locals))
         if len(w_locals) != 0:
             w_glob = FedAvg(w_locals)
-            print(loss_locals)
-            print(sum((loss_locals)))
             loss_avg = sum(loss_locals) / len(loss_locals)
             #acc_avg = sum(acc_locals) / len(acc_locals)
         epoch_time.append((T2 - T1) / 60)
